@@ -37,16 +37,16 @@
             drawColumnChart() {
                 this.chartColumn = echarts.init(document.getElementById('chartColumn'));
                 this.chartColumn.setOption({
-                  title: { text: 'Column Chart' },
-                  tooltip: {},
-                  xAxis: {
-                      data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
-                  },
-                  yAxis: {},
-                  series: [{
-                      name: '销量',
-                      type: 'bar',
-                      data: [5, 20, 36, 10, 10, 20]
+                    title: {text: '新增用户数量'},
+                    tooltip: {},
+                    xAxis: {
+                        data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+                    },
+                    yAxis: {},
+                    series: [{
+                        name: '新增用户',
+                        type: 'bar',
+                        data: [5, 20, 36, 10, 10, 20, 30]
                     }]
                 });
             },
@@ -54,7 +54,7 @@
                 this.chartBar = echarts.init(document.getElementById('chartBar'));
                 this.chartBar.setOption({
                     title: {
-                        text: 'Bar Chart',
+                        text: '科普页面访问次数',
                         subtext: '数据来自网络'
                     },
                     tooltip: {
@@ -64,7 +64,7 @@
                         }
                     },
                     legend: {
-                        data: ['2011年', '2012年']
+                        data: ['2019年', '2020年']
                     },
                     grid: {
                         left: '3%',
@@ -78,18 +78,18 @@
                     },
                     yAxis: {
                         type: 'category',
-                        data: ['巴西', '印尼', '美国', '印度', '中国', '世界人口(万)']
+                        data: ['增肌', '塑形', '健美操', '有氧', '饮食', '作息', '制定计划']
                     },
                     series: [
                         {
-                            name: '2011年',
+                            name: '2019年',
                             type: 'bar',
-                            data: [18203, 23489, 29034, 104970, 131744, 630230]
+                            data: [100, 500, 1520, 256, 360, 336, 536]
                         },
                         {
-                            name: '2012年',
+                            name: '2020年',
                             type: 'bar',
-                            data: [19325, 23438, 31000, 121594, 134141, 681807]
+                            data: [677, 1000, 1500, 400, 600, 900, 1000]
                         }
                     ]
                 });
@@ -98,7 +98,7 @@
                 this.chartLine = echarts.init(document.getElementById('chartLine'));
                 this.chartLine.setOption({
                     title: {
-                        text: 'Line Chart'
+                        text: 'APP影响力来源'
                     },
                     tooltip: {
                         trigger: 'axis'
@@ -146,8 +146,8 @@
                 this.chartPie = echarts.init(document.getElementById('chartPie'));
                 this.chartPie.setOption({
                     title: {
-                        text: 'Pie Chart',
-                        subtext: '纯属虚构',
+                        text: '用户归属地分布',
+                        subtext: '模糊估计',
                         x: 'center'
                     },
                     tooltip: {
@@ -157,7 +157,7 @@
                     legend: {
                         orient: 'vertical',
                         left: 'left',
-                        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+                        data: ['深圳', '广州', '佛山', '中山', '珠海']
                     },
                     series: [
                         {
@@ -166,11 +166,11 @@
                             radius: '55%',
                             center: ['50%', '60%'],
                             data: [
-                                { value: 335, name: '直接访问' },
-                                { value: 310, name: '邮件营销' },
-                                { value: 234, name: '联盟广告' },
-                                { value: 135, name: '视频广告' },
-                                { value: 1548, name: '搜索引擎' }
+                                {value: 335, name: '深圳'},
+                                {value: 310, name: '广州'},
+                                {value: 234, name: '珠海'},
+                                {value: 135, name: '中山'},
+                                {value: 1548, name: '东莞'}
                             ],
                             itemStyle: {
                                 emphasis: {
@@ -205,6 +205,7 @@
         width: 100%;
         float: left;
     }
+
     /*.chart div {
         height: 400px;
         float: left;

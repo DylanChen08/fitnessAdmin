@@ -75,7 +75,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'健身房管理中心',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
